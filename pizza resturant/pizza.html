@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Resturant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="pizza.css" />
+  </head>
+  <body>
+    <header class="nav-header">
+      <nav class="navbar">
+        <a href="#">HOME</a>
+        <a href="#">MENU</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT</a>
+      </nav>
+    
+
+    <!-- Home-image -->
+    <section class="home-text">
+      
+      <!-- home text on images -->
+      <div class="home-heading">
+        <h2>THIN </h2>
+        <h2>CRUST PIZZA</h2>
+        <h4>LET ME SEE THE MENU</h4>
+      </div>
+      <div class="bottom-left">
+        <p>OPEN FROM 10AM TO 12PM</p>
+      </div>
+        
+   
+    </section>
+  </header>
+    <!-- The menu -->
+    <main class="main-menu">
+      <h2>THE MENU</h2>
+   
+    <!-- tabs of pizza, salads and -->
+    <section class="tab">
+      <aside class="tablinks" onclick="openMenu(event, 'pizza')" id="defaultOpen">PIZZA</aside>
+      <aside class="tablinks" onclick="openMenu(event, 'salad')">SALAD</aside>
+      <aside class="tablinks" onclick="openMenu(event, 'starter')">
+        STARTER
+      </aside>
+    </section>
+  
+
+  <!-- the menu- black-bg -->
+  
+    <!-- TABCONTENT OF PIZZA, SALMON AND STARTER -->
+    <section id="pizza" class="tabcontent">
+      <h1>Margherita <span class="right-align">$12.50</span></h1>
+      <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+      <hr>
+      <h1>Formaggio <span class="right-align">$15.50</span></h1>
+      <p>Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+      <hr>
+      <h1>Chicken <span class="right-align">$16.50</span></h1>
+      <p>Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+      <hr>
+      <h1>Meat Town <span class="popular">HOT</span>  <span class="right-align">$20.00</span></h1>
+      <p>Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+      <hr>
+      <h1>Parma <span class="new">NEW</span>  <span class="right-align">$21.50</span></h1>
+      <p>Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+    </section>
+    <section id="salad" class="tabcontent">
+      <h1>Margherita <span class="right-align">$12.50</span></h1>
+      <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+      <hr>
+      <h1>Formaggio <span class="right-align">$15.50</span></h1>
+      <p>Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+      <hr>
+      <h1>Chicken <span class="right-align">$16.50</span></h1>
+      <p>Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+      <hr>
+      <h1>Meat Town <span class="popular">HOT</span>  <span class="right-align">$20.00</span></h1>
+      <p>Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+      <hr>
+      <h1>Parma <span class="new">NEW</span>  <span class="right-align">$21.50</span></h1>
+      <p>Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+    </section>
+    <section id="starter" class="tabcontent">
+      <h1>Margherita <span class="right-align">$12.50</span></h1>
+      <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+      <hr>
+      <h1>Formaggio <span class="right-align">$15.50</span></h1>
+      <p>Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+      <hr>
+      <h1>Chicken <span class="right-align">$16.50</span></h1>
+      <p>Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+      <hr>
+      <h1>Meat Town <span class="popular">HOT</span>  <span class="right-align">$20.00</span></h1>
+      <p>Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+      <hr>
+      <h1>Parma <span class="new">NEW</span>  <span class="right-align">$21.50</span></h1>
+      <p>Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+    </section>
+  </main>
+
+  <!-- About container -->
+  <main class="main-about">
+    <section class="about-section">
+    <h2>ABOUT</h2>
+    <P>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</P>
+    <P><strong>The Chef?</strong> Mr. Italiano himself</P>
+    <p>We are proud of our interiors.</p>
+    <img src="../Images/shop-1.jpg" alt="" width="100%">
+      <aside class="about-opening">
+        <h3>OPENING HOURS</h3>
+        <P>Mon & Tue CLOSED <SPAN class="opening-right">Friday 10:00 - 12:00</SPAN></P>
+        <P>Wednesday 10.00 - 24.00 <SPAN class="opening-right">Saturday 10:00 - 23:00</SPAN></P>
+        <P>Thursday 10:00 - 24:00 <SPAN class="opening-right">Sunday Closed</SPAN></P>
+      </aside>
+
+    </section>
+  </main>
+  <!-- contact main --> 
+  <main class="main-contact">
+    <section class="contact-section">
+      <h2>CONTACT</h2>
+      <p>Find us at some address at some place or call us at 05050515-122330</p>
+      <p><span>FYI!</span>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+      <form class="contact-form">
+        <p><strong>Reserve </strong>a table, ask for today's special or just send us a message:</p>
+        
+        <input type="text" name="name" id="name" placeholder="NAME" required>
+        <input type="number" name="people" id="people" placeholder="HOW MANY PEOPLE">
+        <input type="date" name="date" id="date" value="2022-03-15">
+        <input type="text" name="massage" id="message" placeholder="MASSAGE \ SPECIAL REQUIREMENTS">
+        <button>SEND MESSAGE</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>Designed By - <em>Sandeep Kumar</em></p>
+  </footer>
+
+
+  </body>
+  <script src="pizza.js"></script>
+</html>

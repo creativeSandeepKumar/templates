@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+.header {
+    border-bottom: 1px solid #e2e8f0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+/* .hamburger {
+    display: none;
+} */
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+/* .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+/* .nav-item {
+    margin-left: 5rem;
+} */
+.nav-link, a {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
+}
+.nav-link:hover, a:hover {
+    color: #482ff7;
+}
+
+
+    .nav-menu {
+        position: fixed;
+        left: -400%;
+        top: 1rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 40%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item{
+        margin: 2.5rem 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+/* navbar end */
+.main {
+    margin: 8%;
+}
+
+.foodimge-detail h2, .about h2, h3, .about-footer h2, .blog-post h2 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: lighter;
+    margin: 2% 0;
+}
+.foodimge-detail p, .about p, .about-footer p {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: lighter;
+    margin: 4% 0;
+}
+.center {
+    text-align: center;
+} 
+.pagination {
+    display: inline-block;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 10px;
+    text-decoration: none;
+    transition: background-color .3s;
+    margin: 0 4px;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background-color: #4caf50;
+    color: white;
+    border: 1px solid #4caf50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+/* about section */
+.about {
+    margin: 10% 2%;
+}
+.about img {
+    height: 80vw;
+   
+}
+
+/* footer */
+.footer {
+    padding: 7rem 0;
+    border-top: 1px solid #ddd;
+}
+
+.blog-img img {
+    width: 8rem;
+    float: left;
+}
+.blog-img h3, p {
+    text-align: left;
+    padding: 0 2em;
+    margin: 0 2em;
+}
+.blog-post {
+    margin: 5rem 5%;
+}
+.blog-img {
+    padding: 2rem;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+.blog-text {
+    width: auto;
+    padding-left: 3em;
+    margin-left: 2em;
+    /* background-color: #4caf50; */
+}
+.blog-text > h3 {
+    text-align: left;
+}
+.blog-img {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* popular tags */
+.popular {
+    margin: 5rem 5%;
+}
+.popular > h2 {
+    font-size: 2.5em;
+    font-weight: lighter;
+}
+.popular span {
+    margin: 1em .4em ;
+    font-size: 1em;
+    
+   
+}
+.designer > p {
+    font-size: 3em;
+    text-align: center;
+    padding: 2rem 0;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+   .food-container {
+       column-count: 2;
+       column-gap: 4%;
+   }
+   .foodimge-detail img {
+       height: 40vw;
+   }
+   .about-footer{
+    float: left;
+    width: 30%;
+    margin: 0 1.66%;
+}
+.blog-post{
+    float: left;
+    width: 30%;
+    margin: 0 1.66%;
+}
+.popular{
+    float: left;
+    width: 30%;
+    margin: 0 1.66%;
+}
+.footer-container {
+    content: "";
+    clear: both;
+    display: table;
+}
+}
+@media only screen and (min-width: 800px) {
+   .food-container {
+       column-count: 4;
+       column-gap: 2%;
+   }
+   .foodimge-detail img {
+       height: 30vw;
+   }
+   .foodimge-detail {
+       height: 57rem;
+       /* margin: 5% 0; */
+   }
+   .main {
+       margin: 5% 2%;
+   }
+   .about-footer{
+       float: left;
+       width: 30%;
+       margin: 0 1.66%;
+   }
+   .blog-post{
+       float: left;
+       width: 30%;
+       margin: 0 1.66%;
+   }
+   .popular{
+       float: left;
+       width: 30%;
+       margin: 0 1.66%;
+   }
+   .footer-container {
+    content: "";
+    clear: both;
+    display: table;
+}
+}

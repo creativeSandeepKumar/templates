@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Interior</title>
+    <link rel="stylesheet" href="cafe.css" />
+  </head>
+  <body>
+    <header class="navheader">
+      <nav class="navbar">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">MENU</a>
+        <a href="#">WHERE</a>
+      </nav>
+    </header>
+
+    <!-- home image and text -->
+    <section class="home-img">
+      <img src="../Images/cafe-shop.jpg" alt="" width="100%" />
+      <div class="home-img-text">
+        <h2>the</h2>
+        <h2>cafe</h2>
+      </div>
+      <div class="bottom-right-text">
+        <p>15 Adr street, 5015</p>
+      </div>
+      <div class="bottom-left-text">
+        <p>Open from 6am to 5pm</p>
+      </div>
+    </section>
+    <!-- main for width in center -->
+    <main class="container">
+      <!-- about section -->
+      <section class="about-cafe">
+        <div class="about-head">
+          <h2>ABOUT THE CAFE</h2>
+        </div>
+        <p>
+          The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit
+          amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p>
+          In addition to our full espresso and brew bar menu, we serve fresh
+          made-to-order breakfast and lunch sandwiches, as well as a selection
+          of sides and salads and other good stuff.
+        </p>
+        <div class="tagline">
+          <p>
+            <i>
+              "Use products from nature for what it's worth - but never too
+              early, nor too late." Fresh is the new sweet.
+            </i>
+          </p>
+          <p>Chef, Coffeeist and Owner: Liam Brown</p>
+        </div>
+        <img src="../Images/cafe-shop-2.jpg" alt="" width="100%" />
+        <p><strong>Opening hours:</strong>everyday from 6am to 5pm.</p>
+        <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+      </section>
+      <!-- menu section -->
+      <main class="menu-container">
+        <div class="menu-heading">
+          <h2>THE MENU</h2>
+        </div>
+        <section class="food-eat">
+          <aside class="eat-tab tablink" id="myLink" onclick="openMenu(event, 'Eat');">
+            <a href="#" >Eat</a>
+          </aside>
+          <aside class="drink-tab tablink" id="drink-button" onclick="openMenu(event, 'Drinks');">
+            <a href="#">Drink</a>
+          </aside>
+        </section>
+        <aside class="eat-menu manu" id="eat-tab" >
+          <h5>Bread Basket</h5>
+          <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+          <br />
+
+          <h5>Honey Almond Granola with Fruits</h5>
+          <p>
+            Natural cereal of honey toasted oats, raisins, almonds and dates
+            7.00
+          </p>
+          <br />
+
+          <h5>Belgian Waffle</h5>
+          <p>Vanilla flavored batter with malted flour 7.50</p>
+          <br />
+          <h5>Scrambled eggs</h5>
+          <p>
+            Scrambled eggs, roasted red pepper and garlic, with green onions
+            7.50
+          </p>
+          <br />
+          <h5>Blueberry Pancakes</h5>
+          <p>With syrup, butter and lots of berries 8.50</p>
+        </aside>
+        <aside class="drink-menu menu" id="drink-tab">
+          <h5>Coffee</h5>
+          <p>Regular coffee 2.50</p>
+          <br />
+
+          <h5>Chocolato</h5>
+          <p>
+            Chocolate espresso with milk 4.50
+          </p>
+          <br />
+
+          <h5>Iced tea</h5>
+          <p>Iced tea</p>
+          <br />
+          <h5>Soda</h5>
+          <p>
+            Coke, Sprite, Fanta, etc. 2.50
+          </p>
+          <br />
+          <h5>Corretto</h5>
+          <p>Whiskey and coffee 5.00</p>
+        </aside>
+       
+        <img src="../Images/coffee-3.jpg" alt="" width="100%" />
+      </main>
+      <!-- menu section -->
+      <!-- where to find us -->
+      <section class="where-find">
+        <div class="find-heading">
+          <h4>WHERE TO FIND US</h4>
+        </div>
+        <p>Find us at some address at some place.</p>
+        <img src="" alt="" width="100%" />
+        <p><span>FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+        <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+        <form class="contact-form">
+          <input type="text" name="name" id="name" placeholder="Name" />
+          <input type="text" name="people" id="people" placeholder="How many people" />
+          <input type="date" name="" id="date" value="2022-02-16"/>
+          <input type="text" name="message" id="message" placeholder="Message \ Special requirements" />
+          <button type="submit">SEND MESSAGE</button>
+        </form>
+      </section>
+
+
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <p>Designed By - <em>Sandeep Kumar</em></p>
+    </footer>
+  </body>
+  <script src="cafe.js"></script>
+</html>

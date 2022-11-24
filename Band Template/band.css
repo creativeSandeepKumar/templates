@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* styling of navbar */
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar{
+    overflow: hidden;
+    background-color: black;
+    
+}
+.navbar a {
+    float: left;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+    width: 10rem;
+}
+.dropdown .dropbtn{
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    padding: 14px 16px;
+    /* margin: 0; */
+}
+
+.navbar a:hover, .dropdown:hover, .dropbtn:hover, .searchbtn:hover {
+    background-color: #ccc;
+    color: black;
+}
+.dropdown-content {
+    display: none;
+    color: black;
+    background-color: #ccc;
+    position: absolute;
+    min-width: 10rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content  a{
+    float: none;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover  {
+    background-color: #aaa;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* search container */
+.search-container{
+    float: right;
+}
+#searchbar, .searchbtn{
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    margin-top: .5rem;
+    font-size: 1.2rem;
+}
+#searchbar:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px 5px rgb(75, 75, 78);
+}
+.searchbtn{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+/* end styling of navbar */
+
+/* Starts the band section */
+.band, .tour, .contact-container {
+    margin:3rem 15rem 1rem 15rem ;
+    
+    text-align: center;
+    /* width: 75%; */
+    
+}
+.band > p, .tour > p {
+    margin-top: 1rem;
+    /* text-indent: left; */
+}
+.band-img, .city-tour{
+    max-width: 15rem;
+    float: left;
+    margin: 2rem 1.5rem 2rem 1.5rem;
+}
+.band-img > p {
+    margin-bottom: 1rem;
+}
+.band-img > img {
+    border-radius: 1rem;
+}
+.clear {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Tour section starts here */
+.tour-container {
+    background-color: black;
+    color: white;
+}
+
+.tickets {
+    width: 100%;
+    background-color: white;
+    color: #555;
+    text-align: left;
+    margin: 3rem 0 3rem 0;
+}
+.tickets > p {
+    padding: 10px 0 0 12px;
+}
+.sold {
+    padding: 8px 12px;
+    background-color: red;
+    color: white;
+}
+.number {
+    float: right;
+    padding: 5px 14px;
+    background-color: #444;
+    border-radius: 90%;
+    color: white;
+    margin-right: 10%;
+}
+
+/* city tours */
+.city-tour {
+    background-color: white;
+    color: black;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.city-tour h3 {
+    padding: 1rem 1rem;
+}
+.city-tour p {
+    padding: 0 0 1rem 1rem;
+}
+.dates {
+    color: #666;
+}
+.city-tour img {
+    height: 20vw;
+}
+.buy-tickets, .submit {
+    padding: .6rem 1rem;
+    margin: 0 0 1rem 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.buy-tickets:hover, .submit:hover {
+    background-color: #666;
+    color: black;
+}
+ 
+
+/* contact section */
+.contact-container {
+    /* background-color: red; */
+    /* margin: 3rem 0; */
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    /* height: 20rem; */
+}
+.address, .contact-form {
+    float: left;
+    width: 50%;
+    height: 16rem;
+    text-align: left;
+    padding-top: 5rem;
+    font-size: 1.3rem;
+    
+}
+
+.address i {
+    padding: 0 1rem;
+}
+.address p {
+    padding: .5rem 0;
+}
+
+.contact > p {
+    margin: 1rem 0;
+}
+.name, .email, .message {
+    padding: .4rem;
+    margin: 0 0 .5rem 1rem;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+}
+.message {
+    width: 90%;
+}
+#images {
+    margin: 1rem 0;
+}
+footer {
+    font-size: 2rem;
+    text-align: center;
+    margin: 3rem 0;
+}
+.copy {
+    font-size: 1rem;
+    padding: 2rem 0;
+}

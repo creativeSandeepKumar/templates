@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Website Template</title>
+    <link rel="stylesheet" href="Marketingwbst.css">
+    <script src="https://kit.fontawesome.com/971cea7bf2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="nav-section">
+   
+        <header class="top-nav">
+            <a href="#" class="active"><i class="fas fa-home"></i> Logo</a>
+            <a href="#" id="bars"><i class="fas fa-bars"></i></a>
+        </header>
+        <!--  navbar shows after 60px  -->
+        <nav class="navbar">
+            <a href="#" class="active"><i class="fas fa-home"></i> Logo</a>
+            <a href="#">Team</a>
+            <a href="#">Work</a>
+            <a href="#">Price</a>
+            <a href="#">Contact</a>
+            <div class="dropdown">
+            <button class="dropbtn">Dropdown <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="#">Link-1</a>
+                <a href="#">Link-2</a>
+                <a href="#">Link-3</a>
+                <a href="#">Link-4</a>
+            </div>
+        </div>
+            <a href="#" class="search"><i class="fa fa-search"></i></a>
+        </nav>
+        <!-- full width nav display on clicking bar -->
+        <div class="js-nav" id="nav-id">
+            <a href="#">Team</a>
+            <a href="#">Work</a>
+            <a href="#">Price</a>
+            <a href="#">Contact</a>
+            <a href="#">Search</a>
+        </div>
+    </section>
+    <main class="home-img">
+        <img src="../Images/nature-2.jpg" alt="" width="100%">
+        <section class="home-text">
+            <h3><span id="modelBtn">LEARN W3.CSS</span></h3>
+        </section>
+    </main>
+    <!-- model -->
+    <main class="model-main" id="myModal">
+        <section class="model-section">
+        
+        <header class="modal-header">
+            <h3>Oh snap! We just showed you a modal..</h3>
+            <span class="closemodel">&times;</span>
+            <p>Because we can </p>
+        </header>
+        <aside class="modal-aside">
+            <p>Cool huh? Ok, enough teasing around..</p>
+            <p>Go to our <span> W3.CSS Tutorial</span> to learn more!</p>
+        </aside>
+        <footer class="modal-footer">
+            <p>Modal footer</p>
+        </footer>
+    </section>
+    </main>
+
+    <!-- our team -->
+    <main class="our-team-main">
+        <h2>OUR TEAM</h2>
+        <p>Meet the team - our office rats:
+        </p>
+        <section class="our-team-section">
+            <aside class="our-team-aside">
+                <img src="../Images/face-1.jpg" alt="" width="100%">
+                <h3>Johnny Walker</h3>
+                <p>Web Designer</p>
+            </aside>
+            <aside class="our-team-aside">
+                <img src="../Images/face-2.jpg" alt="" width="100%">
+                <h3>Rebecca Flex</h3>
+                <p>Support</p>
+            </aside>
+            <aside class="our-team-aside">
+                <img src="../Images/face-3.jpg" alt="" width="100%">
+                <h3>Jan Ringo</h3>
+                <p>Jan Ringo</p>
+            </aside>
+            <aside class="our-team-aside">
+                <img src="../Images/girl-2.jpg" alt="" width="100%">
+                <h3>Kai Ringo</h3>
+                <p>Fixer</p>
+            </aside>
+        </section>
+    </main>
+    <!-- our team end -->
+    <!-- our work -->
+    <section class="our-work-section">
+        <aside class="our-work-aside">
+            <h2>Our Work</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </aside>
+        <aside class="our-work-aside img-card">
+            <img src="../Images/nature-1.jpg" alt="" width="100%">
+            <ol>
+                <li><h3>Customer</h3></li>
+                <li class="span">1</li>
+                <li class="trade">Trade</li>
+                <li>Blablabla</li>
+                <li>Blablabla</li>
+                <li>Blablabla</li>
+                <li>Blablabla</li>
+            </ol>
+        </aside>
+        <aside class="our-work-aside img-card">
+            <img src="../Images/nature-2.jpg" alt="" width="100%">
+            <ol>
+                <li><h3>Customer</h3></li>
+                <li class="span">2</li>
+                <li>Trade</li>
+                <li>Blablabla</li>
+                <li>Blablabla</li>
+                <li>Blablabla</li>
+                <li>Blablabla</li>
+            </ol>
+        </aside>
+        <aside class="our-work-aside img-card">
+            <img src="../Images/nature-4.jpg" alt="" width="100%">
+            <ol>
+                <li><h3>Customer</h3></li>
+                <li class="span">3</li>
+                <li>Trade</li>
+                <li>Blablabla</li>
+                <li>Blablabla</li>
+                <li>Blablabla</li>
+                <li>Blablabla</li>
+            </ol>
+        </aside>
+        <div class="button">
+            <button id="sidebarBtn">+</button>
+        </div>
+    </section>
+    <!-- our work end -->
+         <!-- sidebar appear when clicking the button -->
+         <section class="sidebar" id="sidebar-id">
+            <a href="#" id="closeBtn">Close &times;</a>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </section>
+</body>
+<script src="Marketingwbst.js"></script>
+</html>

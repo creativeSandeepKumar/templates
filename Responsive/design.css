@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 20px;
+    height: 50px;
+    background-color: black;
+}
+
+#slideshow {
+    height: 45vw;
+    background-color: purple;
+}
+
+.band > h1, .contact > h1  {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+.band > p, .contact > p {
+    text-align: center;
+}
+.band-para {
+    text-align: left;
+}
+.band, .contact {
+    margin-top: 0 8.33%;
+}
+
+.band-image1, .tour-image1 {
+    
+    background-color: yellow;
+}
+.band-image2, .tour-image2, .address {
+  
+    background-color: red;
+}
+.band-image3, .tour-image3, .form {
+    background-color: orange;
+}
+.band-image, .tour-image {
+    /* height: 30vw; */
+    padding: 2rem;
+    /* margin: 4% 0 ; */
+}
+#tour-container {
+    background-color: black;
+    color: white;
+    /* height: 300px; */
+}
+.tour-dates {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.months {
+    background-color: white;
+    height: 2rem;
+}
+.form, .address {
+    height: 15vw;
+}
+
+
+

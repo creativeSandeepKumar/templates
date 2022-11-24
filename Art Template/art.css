@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ header {
+     padding: 1em;
+     font-size: 1.2em;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+nav h2:first-child {
+    text-align: left;
+    width: 50%;
+    float: left;
+}
+nav h2:last-child {
+    text-align: right;
+    float: left;
+    width: 50%;
+}
+nav::after {
+    clear: both;
+    display: table;
+    content: "";
+}
+.images {
+    /* margin: 10% 0 5% 0; */
+    background-color: #bbb;
+}
+img {
+    margin: 0;
+    display: block;
+}
+
+/* About */
+.about {
+    background-color: #bbb;
+}
+.about > h2 {
+    text-align: center;
+    font-size: 2em;
+    padding: 2em 0;
+}
+
+.about-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+.about-para {
+    width: 60%;
+    margin: 2% 20%;
+    text-align: justify;
+}
+.about-para p:last-child {
+    color: red;
+    text-align: center;
+    font-size: 1.6em;
+    padding: 1rem 0;
+}
+
+/* contact form */
+.contact-form {
+    width: 60%;
+    margin: 2% 20% 0 20%;
+    padding-bottom: 2em;
+}
+.contact-form label {
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+    padding-top: 1em;
+}
+.contact-form input, button {
+    
+    width: 100%;
+    padding: .7em 0;
+    border: none;
+    outline: none;
+}
+.contact-form input:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.contact-form button {
+    margin: 2em 0;
+    /* padding: 1em 0; */
+    cursor: pointer;
+    background-color: seagreen;
+    font-size: 1.2em;
+    
+}
+.contact-form button:hover {
+    background-color: pink;
+}
+
+
+
+
+
+
+
+
+/* for tablets */
+@media only screen and (min-width: 600px) {
+    .images {
+        line-height: 0;
+        column-count: 2;
+        column-gap: 5px;
+    }
+    .images img {
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 5px;
+    }
+   
+
+}
+/* for laptopts/desktops */
+@media only screen and (min-width: 800px) {
+    .images {
+        line-height: 0;
+        column-count: 3;
+        column-gap: 5px;
+    }
+    .images img {
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 5px;
+    }
+}

@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+.nav-header {
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+} 
+.navbar {
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    text-align: center;
+}
+.navbar a {
+    color: white;
+    padding: 1rem;
+    font-size: 1.4rem;
+    display: block;
+    float: left;
+    
+    
+}
+.navbar a:last-child {
+    float: right;
+}
+.navbar a:hover {
+    background-color: white;
+    color: black;
+}
+
+.navbar .active {
+    background-color: #555;
+}
+.navbar .active:hover {
+    background-color: #999;
+    color: white;
+}
+
+.navbar a:not(.active, .bar-icon) {
+    display: none;
+}
+
+/* sidebar */
+.sidebar {
+   position: relative;
+    padding-top: 70px;
+    width: 0;
+    background-color: #ccc;
+    height: 100%;
+    position: fixed;
+    overflow-x: hidden;
+    transition: .3s;
+}
+.sidebar h3 {
+    padding: .8rem;
+    font-size: 1.6rem;
+}
+.sidebar a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: black;
+}
+.sidebar a:hover {
+    background-color: black;
+    color: white;
+}
+.sidebar span {
+    position: absolute;
+    top: 3.3rem;
+    right: 0;
+    font-size: 3.4rem;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+   
+}
+.sidebar span:hover {
+    background-color: #000;
+    color: white;
+}
+
+/* layout-main */
+.layout-main {
+    padding: 1rem;
+    padding-top: 5rem;
+}
+
+.layout-main h1 {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: rgb(5, 165, 27);
+}
+
+.layout-main p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+
+
+.layout-main .ad-1 {
+    padding: 2rem;
+    border: 1px solid rgb(223, 222, 222);
+    width: 100%;
+    margin: 1rem 0;
+    text-align: center;
+}
+.layout-main .ad-2 {
+    padding: 4rem;
+    border: 1px solid rgb(223, 222, 222);
+    width: 100%;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+/* pagination */
+.pagination {
+    text-align: center;
+    padding: 2rem;
+}
+.pagination a {
+    color: black;
+    padding: .6rem .8rem;
+    font-size: 1.3rem;
+}
+.pagination a.active {
+    background-color: #000;
+    color: white;
+}
+.pagination a.active:hover {
+    background-color: #ccc;
+}
+.pagination a:hover {
+    background-color: #000;
+    color: white;
+}
+
+/* footer  */
+.footer {
+    text-align: center;
+    padding: 3rem;
+    background-color: #000;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+    .navbar a:not(.active, .bar-icon) {
+        display: block;
+    }
+    .navbar a.none {
+        display: none;
+    }
+    .layout-main {
+        display: grid;
+        grid-template-columns: auto 30%;
+        gap: 1rem;
+        transition: .4s;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .sidebar.responsive{
+        width: 250px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar a.none {
+        display: block;
+    }
+    .navbar .bar-icon {
+        display: none;
+    }
+    .sidebar {
+        width: 250px;
+    }
+    .sidebar span {
+        display: none;
+    }
+    .layout-main, .pagination, .footer {
+        margin-left: 250px;
+    }
+}

@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    text-align: center;
+}
+
+.nav {
+    background-color: black;
+    height: 6;
+    color: white;
+}
+
+.slideshow {
+    background-color: springgreen;
+    height: 40vw;
+}
+/* band section */
+.band {
+    background-color: tomato;
+    /* height: 40vw; */
+    padding: 1rem;
+    /* padding-top: 4rem; */
+}
+.band > h1, .contact > h1 {
+    padding-top: 3rem;
+    font-size: 2em;
+}
+.band > p, .contact > p {
+    padding-top: 1rem;
+}
+.band-para {
+    text-align: justify;
+}
+
+.band-image-container, .tour-image-container, .tour-month-container, .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: white; */
+    /* margin-top: 5%; */
+}
+.bandimg, .tourimg{
+    width: 70%;
+    /* margin: 15%; */
+    margin: 5% 0;
+    height: 40vw;
+    background-color: white;
+}
+
+/* band-section end */
+/* tour-section start */
+
+.tour {
+    background-color: turquoise;
+    /* height: 60vw; */
+    text-align: center;
+}
+.months {
+    width: 96%;
+    height: 20vw;
+    background-color: white;
+    margin: 5% 2%;
+}
+.tourimg {
+    height: 90vw;
+    margin: 2% 0;
+}
+/* tour-section end */
+/* contact-section start */
+.contact {
+    /* height: 50vw; */
+    background-color: hotpink;
+    
+}
+
+
+.address, .form {
+    width: 100%;
+    height: 20vw;
+    background-color: white;
+    text-align: left;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+
+
+
+/* contact-section end */
+.image {
+    background-color: crimson;
+    height: 40vw;
+}
+
+.footer {
+    background-color: deeppink;
+    height: 20vw;
+}
+
+
+
+.band, .tour, .contact {
+    padding-top: 4vw;
+}
+/* for tablets */
+@media only screen and (min-width: 600px) {
+/* band section start */
+    .band-image-container, .tour-image-container, .tour-month-container, .contact-container{
+        flex-direction: row;
+    }
+    .bandimg, .tourimg{
+        width: 30%;
+        margin: 5% 2%;
+        height: 30vw;
+    }
+/* band section end */
+/*contact */
+    .about {
+        width: 50%;
+    }
+
+}
+/* for desktop */
+@media only screen and (min-width: 800px) {
+    /* band section start */
+    .band-image-container, .tour-image-container, .tour-month-container, .contact-container{
+        flex-direction: row;
+    }
+    .bandimg, .tourimg{
+        width: 22%;
+        margin: 5% 2%;
+        height: 30vw;
+    }
+    .months {
+        width: 72%;
+        margin: 14%;
+    }
+/* band section end */
+/* contact */
+.about {
+    width: 50%;
+}
+}

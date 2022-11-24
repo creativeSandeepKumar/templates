@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    background-color: #ccc;
+}
+.navbar a {
+    padding: 1rem 0;
+    color: black;
+    font-size: 1.4rem;
+    
+}
+.navbar a:hover {
+    background-color: #999;
+}
+
+.home-main {
+    padding: 2rem 1rem;
+}
+.home-main h1 {
+    font-size: 2.8rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+.home-main p {
+    padding: 1rem 0;
+}
+
+/* slideshow-container */
+.slideshow-container {
+    position: relative;
+}
+
+.slideshow-container img {
+    max-height: 1000px;
+}
+.slideshow-container .prev, .next {
+    cursor: pointer;
+   color: black;
+   background-color: white;
+    width: auto;
+    padding: .5rem;
+    font-weight: bold;
+    transition: .6s ease;
+    user-select: none;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.prev:hover, .next:hover {
+    background-color: #000;
+    color: white;
+}
+
+.mySlides {
+    position: relative;
+    text-align: center;
+    display: none;
+}
+.mySlides p {
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    color: #ddd;
+    font-size: 2rem;
+    
+}
+.slidebtn {
+    position: absolute;
+    background-color: #555;
+    padding: .5rem;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    text-align: center;
+}
+/* dot */
+.dot {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 10px 2px;
+    background-color: transparent;
+    display: inline-block;
+    transition: backgroud-color 0.6s ease;
+    border: 1px solid white;
+}
+.active, .dot:hover {
+    background-color: white;
+    transition: 1s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 992px) {
+    .home-main {
+        display: grid;
+        justify-content: center;
+    }
+    .home-header, .slideshow-container {
+        width: 900px;
+    }
+}

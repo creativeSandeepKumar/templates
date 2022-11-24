@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+nav h2 {
+    padding: .6em;
+}
+ .logo h2>span {
+    font-weight: lighter;
+    font-family: monospace;
+    visibility: hidden;
+}
+.logo {
+    position: relative;
+    text-align: center;
+}
+.logo > h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+   
+}
+.logo >h1 {
+    padding: .5em;
+    color: white;
+    background-color: rgba(10, 10, 10, 0.637);
+}
+
+.logo img {
+    height: 45vw;
+}
+
+/* Projects */
+.projects, .about, .contact-form {
+    width: 90%;
+    margin: 5% 5% 5% 5%;
+}
+.projects h1, .about > h2, .contact-form > h2 {
+    padding: 1em 0;
+    border-bottom: .5px solid rgb(44, 42, 42);
+}
+
+.img-house {
+    position: relative;
+    text-align: center;
+    /* color: white; */
+}
+.img-house img {
+    display: block;
+    padding: 5px 0;
+}
+.img-house p {
+    position: absolute;
+    top: 5px;
+    left: 1px;
+    padding: 3vw 2vw;
+    background-color: black;
+    color: white;
+    font-size: 1.1em;
+}
+.projects-img {
+    margin-top: 5%;
+}
+
+/* about */
+.about > p {
+    padding: 5% 0;
+    text-align: justify;
+}
+/* contact */
+
+.contact-img {
+    margin: 8% 0;
+}
+.contact-img h2{
+    padding: .5em 0 1em 0;
+}
+.contact-img p {
+    padding: 0 0 1em 0;
+    text-align: justify;
+}
+.contact-img button {
+    padding: .5em 0;
+    width: 100%;
+    margin-bottom: 1.3em;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+}
+.contact-img button:hover {
+    background-color: #444;
+    color: white;
+}
+
+/* contact-form */
+.contact-form > p {
+    padding: 3% 0;
+    font-size: 1.2em;
+}
+.contact-form input {
+    padding: .5em .6em;
+    margin: .7em 0;
+    font-size: 1.1em;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.contact-form button {
+    padding: .5em 2em;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    margin: 1em 0;
+}
+.contact-form button:hover  {
+    background-color: #555;
+}
+
+footer {
+    background-color: skyblue;
+    font-size: 1.5em;
+    height: 4rem;
+    padding: 1em 0;
+    text-align: center;
+    color: rgb(47, 5, 5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+    .projects-img {
+        column-count: 2;
+        line-height: 0;
+        /* column-gap: 5px; */
+        /* column-width: 100%; */
+    }
+    .contact-img {
+        column-count: 2;
+    }
+    .img-house img, .contact-img{
+        width: 100% !important;
+        height: auto !important;
+    }
+  
+    
+
+}
+@media only screen and (min-width: 800px) {
+    .projects-img {
+        column-count: 3;
+        line-height: 0;
+    }
+    .contact-img {
+        column-count: 4;
+    }
+    .img-house img, .contact-img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .img-house p {
+        padding: 2vw;
+    }
+}

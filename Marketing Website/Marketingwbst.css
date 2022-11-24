@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+ol, ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.nav-section {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+
+.nav-section a i {
+    padding-right: 5px;
+}
+.nav-section a.active {
+    background-color: rgb(4, 87, 83);
+}
+.navbar {
+    float: left;
+    width: 100%;
+     background-color: #000;
+     text-align: center;
+     overflow: hidden;
+  }
+  .navbar a {
+    float: left;
+     padding: .7rem 1rem;
+     font-size: 1.3rem;
+   
+     color: white;
+     
+  }
+  .navbar a.search{
+      float: right;
+     
+  }
+  .navbar::after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  .navbar a:hover,  .dropbtn:hover, .dropdown:hover, .js-nav a:hover {
+      background-color: #444;
+  }
+  /* .dropdown conetnt */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    padding: .7rem 1rem;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+  }
+  .dropdown-content {
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      display: none;
+  }
+  .dropdown-content a {
+      float: none;
+      color: black;
+      padding: .7rem 1rem;
+      display: block;
+      text-align: left;
+  }
+  .dropdown-content a:hover {
+      color: white;
+  }
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+
+  /* dyanamic navbar shows when clicked bar-menu */
+  .js-nav {
+      background-color: #000;
+      display: none;
+  }
+  .js-nav a {
+      color: white;
+      display: block;
+      padding: .7rem 1rem;
+      font-size: 1.3rem;
+  }
+
+  /* home image */
+  .home-img {
+      position: relative;
+     
+  }
+  .home-text {
+      font-size: 1.5rem;
+      position: absolute;
+      bottom: 2rem;
+      left: 1.7rem;
+  }
+  .home-text span {
+      background-color: #000;
+      color: white;
+      padding: 0.5rem 1rem;
+      font-weight: lighter;
+      cursor: pointer;
+  }
+  .home-text span:hover {
+      background-color: #666;
+  }
+  
+  /* model-section */
+  .model-main {
+      display: grid;
+      justify-content: center;
+      position: fixed;
+      z-index: 1;
+      padding-top: 150px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0, 0, 0, 0.4);
+      display: none;
+  }
+  /* modal content  */
+  .model-section {
+      border-radius: 10px;
+      margin: 10%;
+     
+  }
+  .model-section .closemodel {
+      color: white;
+      position: absolute;
+      font-size: 2rem;
+      font-weight: bold;
+      top: 0;
+      right: 1rem;
+      cursor: pointer;
+  }
+  .model-section .modal-header {
+      background-color: rgb(4, 179, 170);
+      padding: 0 1rem;
+      padding-right: 10rem;
+      position: relative;
+      color: white;
+      border-radius: 10px 10px 0 0;
+  }
+  .modal-header h3 {
+      padding: 1rem 0;
+      font-size: 1.5rem;
+  }
+  .modal-header p {
+      font-size: 1.2rem;
+  }
+  .model-section .modal-aside {
+      background-color: white;
+      padding: .5rem 1rem;
+  }
+  .modal-aside p {
+      padding: .5rem 0;
+      font-size: 1.3rem;
+  }
+  .model-section .modal-footer {
+    background-color: rgb(4, 179, 170);
+    padding: 1rem;
+    color: white;
+    font-size: 1.3rem;
+  }
+
+
+  /* our-team-main */
+  .our-team-main {
+      text-align: center;
+     
+      padding: 3rem 2rem;
+  }
+
+  .our-team-main h2 {
+    padding: .5rem 0;
+    font-weight: lighter;
+  }
+  .our-team-main p {
+      padding: .5rem 0;
+      font-size: 1.1rem;
+  }
+
+  .our-team-aside img {
+        border-radius: 50%;
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+  }
+  .our-team-aside h3 {
+     padding: .5rem 0;
+     
+  }
+  .our-team-aside {
+      margin: 1rem 0;
+  }
+/* our-work  */
+.our-work-section {
+    padding: 3rem 2rem 4rem 2rem;
+    background-color: #333;
+    color: white;
+    position: relative;
+}
+  .our-work-aside h2, h3 {
+     padding: 1rem 0;
+     font-size: 2.3rem;
+     font-weight: 400;
+  }
+  .our-work-aside p {
+      font-size: 1.1rem;
+      word-spacing: 3px;
+      line-height: 1.2;
+      letter-spacing: 1px;
+      font-weight: lighter;
+      padding-bottom: 2rem;
+  }
+  .our-work-aside img {
+      height: 400px;
+  }
+
+  .img-card {
+      background-color: white;
+      color: black;
+  }
+  .our-work-aside ol {
+      padding: 1rem;
+  }
+  .our-work-aside li.span{
+      font-size: 2rem;
+  }
+  .our-work-aside li.trade {
+      font-size: 1.5rem;
+  }
+  .our-work-aside li {
+      padding: .5rem;
+      font-size: 1.1rem;
+  }
+  .our-work-section .button button {
+      font-size: 4rem;
+     padding: .5rem 1.5rem;
+      background-color: rgb(4, 155, 155);
+      border: none;
+      border-radius: 50%;
+      color: white;
+      cursor: pointer;
+      margin: 1rem 0;
+  }
+  .our-work-section .button {
+      position: absolute;
+     right: 1rem;
+     bottom: -4rem;
+  }
+
+
+  /* sidebar of + button */
+  .sidebar {
+      width: 0;
+      left: 0;
+      top: 0;
+      height: 100%;
+      position: fixed;
+      z-index: 1;
+      background-color: white;
+      color: black;
+      overflow-x: hidden;
+      transition: 0.5s;
+     
+  }
+  .sidebar a {
+      display: block;
+      padding: .5rem 1rem;
+      font-size: 2rem;
+      color: black;
+    
+  }
+  .sidebar a:hover {
+      color: white;
+      background-color: #444;
+        }
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+/* navbar sit on top max 600px */
+@media only screen and (max-width: 660px) {
+    .top-nav {
+      float: left;
+      width: 100%;
+       background-color: #000;
+    }
+    .top-nav a {
+      float: left;
+       padding: .7rem 1rem;
+       font-size: 1.3rem;
+     
+       color: white;
+       
+    }
+    .top-nav a:last-child{
+        float: right;
+       
+    }
+    .top-nav::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .top-nav a:last-child:hover {
+        background-color: #444;
+    }
+    .navbar {
+        display: none;
+    }
+
+    .js-nav.responsive {
+        display: block;
+    }
+    
+}
+
+/* top navbar not display after 600px */
+@media only screen and (min-width: 660px) {
+    .top-nav {
+        display: none;
+    }
+    .our-team-section, .our-work-section {
+        display: grid;
+        grid-template-columns: auto auto;
+      justify-content: space-around;
+    }
+    .our-work-section {
+        gap: 2rem;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .our-team-section , .our-work-section {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+       justify-content: space-around;
+    }
+} 
+

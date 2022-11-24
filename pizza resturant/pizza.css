@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Amatic SC', cursive;
+}
+
+a {text-decoration: none;}
+
+
+/* background image with header */
+.nav-header {
+    background-image: url(../Images/pizza-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    min-height: 90%;
+   
+}
+
+.navbar {
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+.navbar:hover {
+    background-color: #000;
+}
+.navbar a {
+    padding: 1rem;
+    color: white;
+    font-size: 1.3rem;
+}
+.navbar a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.home-text {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.home-text .home-heading {
+   color: white;
+   /* top: 50%; */
+   font-size: 2.5rem;
+   padding-top: 50%;
+}
+.home-text .home-heading h2 {
+    padding: .5rem 0;
+    font-size: 5rem;
+    letter-spacing: 4px;
+}
+.home-text .home-heading h4 {
+    font-size: 1.8rem;
+    background-color: #000;
+    width: 90%;
+    margin-left: 5%;
+    padding: 1rem .5rem;
+    letter-spacing: 4px;
+}
+.home-text .bottom-left {
+    position: absolute;
+    bottom: -3rem;
+    left: .5rem;
+    color: white;
+    background-color: #000;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+}
+/* the menu- black-bg  */
+.main-menu, .main-contact {
+    padding: 4rem 1rem;
+    color: white;
+    background-color: #000;
+}
+.main-menu h2, .main-about h2, .main-contact h2 {
+    text-align: center;
+    padding: 3rem 0;
+    font-size: 3.7rem;
+    font-weight: lighter;
+  
+}
+
+
+
+
+/* TABMENU */
+.tab {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33% ;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: transparent;
+}
+
+.tab aside {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.6s;
+    font-size: 2rem;
+    font-weight: bold;
+    font-weight: lighter;
+}
+.tab aside:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.tabcontent {
+    display: none;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    animation: fadeEffect 1s;
+    background-color: white;
+    color: #000;
+}
+
+.tab aside.active {
+    background-color: rgb(253, 83, 53);
+  }
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+/* tabcontent items  */
+.tabcontent h1 {
+    font-size: 2.5rem;
+    padding: 1rem 0 .5rem 0;
+}
+.tabcontent h1 .right-align {
+    float: right;
+    background-color: #666;
+    color: white;
+    padding: 0 .5rem;
+    border-radius: .5rem;
+    font-weight: lighter;
+}
+.tabcontent h1 .popular {
+    background-color: tomato;
+    padding: 0 .5rem;
+    color: white;
+    border-radius: 4px;
+}
+.tabcontent h1 .new {
+    background-color: #ccc;
+    padding: 0 .5rem;
+    color: black;
+    border-radius: 4px;
+}
+
+.tabcontent p{
+    font-size: 2rem;
+    padding: 1rem 0 1rem 0;
+}
+
+
+/* main about */
+.main-about{
+    background-color: #f44336;
+    color: white;
+    padding: 4rem 1rem;
+    filter: grayscale(75%);
+}
+.main-about p {
+    font-size: 1.7rem;
+    padding: 1rem;
+    line-height: 1.7;
+}
+.main-about .about-opening h3 {
+    padding: 2rem 0 1rem 1rem;
+    font-size: 3rem;
+}
+.main-about .about-opening .opening-right {
+    padding-left: 5vw;
+}
+.main-about .about-opening p {
+    font-size: 1.4rem;
+}
+
+/* , .main-contact */
+.main-contact {
+    background-color: #607d8b;
+    filter: grayscale(50%);
+    color: white;
+}
+.main-contact p {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.main-contact p span {
+    background-color: #000;
+    padding: 0 .5rem;
+}
+.main-about .contact-form {
+    padding: 2rem 0;
+}
+.contact-form input {
+    width: 100%;
+    padding: 1rem;
+    margin: .5rem 0;
+    font-size: 1.4rem;
+    font-family: 'Amatic SC', cursive;
+}
+.contact-form button {
+    padding: 1rem;
+    width: 100%;
+    margin: .5rem 0;
+    font-size: 1.4rem;
+    font-family: 'Amatic SC', cursive;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: #000;
+    color: white;
+}
+
+.footer {
+    padding: 4rem;
+    background-color: #000;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .home-text .home-heading {
+        padding-top: 30%;
+    }
+    .home-text .bottom-left {
+        bottom: -3rem;
+    }
+    .home-heading h2 {
+        font-size: 8rem;
+        letter-spacing: 8px;
+    }
+    .home-heading h4 {
+        margin-top: 2rem;
+        letter-spacing: 4px;
+    }
+
+    .main-about .about-opening .opening-right {
+        padding-left: 20vw;
+    }
+
+    
+}
+
+@media only screen and (min-width: 1020px) {
+    .main-menu, .main-about, .main-contact {
+        display: grid;
+        justify-content: center;
+       
+    }
+    .main-menu .tab, .tabcontent, .about-section, .contact-section {
+        width: 1000px;
+    }
+
+}

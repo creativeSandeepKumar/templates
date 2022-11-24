@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Templates</title>
+    <link rel="stylesheet" href="social-media.css" />
+
+    <script
+      src="https://kit.fontawesome.com/eefd575678.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="  https://fonts.googleapis.com/css2?family=Amatic+SC&family=Lato:wght@300;400&family=Montserrat&family=Open+Sans&family=Poppins:wght@200&family=Raleway:wght@300;400&display=swap"
+    />
+  </head>
+  <body>
+    <header class="nav-header">
+      <nav class="navbar">
+        <aside class="nav-left">
+          <a href="#" class="active">Logo</a>
+          <a href="#"><i class="fas fa-earth-europe"></i></a>
+          <a href="#"><i class="fas fa-user"></i></a>
+          <a href="#"><i class="fas fa-envelope"></i></a>
+          <a href="#" class="bell-icon"><i class="fas fa-bell"></i>
+            <span class="notification">
+                3
+            </span>
+           
+        </a>
+        </aside>
+        <aside class="nav-right">
+          <a href="#"><i class="fa-solid fa-face-smile"></i></a>
+          <a href="#" class="bar-icon" id="barMenu"
+            ><i class="fa-solid fa-bars"></i
+          ></a>
+        </aside>
+      </nav>
+      <!-- nabar on clicking bar-icon before 660px -->
+      <section class="nav-res" id="Nav-menu">
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">My Profile</a>
+      </section>
+    </header>
+
+    <!-- layout for left, right sidebar and for main contents -->
+    <main class="layout-main">
+      <aside class="profile-side">
+        <section class="profile card">
+          <h2>My Profile</h2>
+          <img src="../Images/face-3.jpg" alt="" width="100%" />
+          <ol>
+            <li><i class="fa-solid fa-pencil"></i> Designer, UI</li>
+            <li><i class="fa-solid fa-house-chimney"></i>London, UK</li>
+            <li><i class="fa-solid fa-cake-candles"></i>April 1, 2000</li>
+          </ol>
+        </section>
+        <!-- section for shortcutes -->
+        <section class="shortcut card">
+          <a href="#"><i class="fa-solid fa-circle-notch"></i> My Groups</a>
+          <a href="#"><i class="fa-solid fa-calendar-check"></i> My Events</a>
+          <a href="#"><i class="fa-solid fa-users"></i> My Photos</a>
+        </section>
+        <!-- interest -->
+        <section class="interest card">
+          <h5>Interest</h5>
+          <p>
+            <span>Tech</span>
+            <span>Tech</span>
+            <span>Tech</span>
+            <span>Tech</span>
+            <span>Tech</span>
+            <span>Tech</span>
+            <span>Tech</span>
+          </p>
+        </section>
+        <!-- section for notification -->
+        <section class="notify card">
+          <h3>Hey!</h3>
+          <span class="times">&times;</span>
+          <p>People are looking at your profile. Find out who.</p>
+        </section>
+      </aside>
+      <!-- main content -->
+      <aside class="main-content">
+        <section class="status card">
+          <p>Social Media template by Ryan & Carol</p>
+          <input type="text" value="Status: Feeling Blue" />
+          <button><i class="fa-solid fa-pencil"></i> Post</button>
+        </section>
+        <!-- section for posts -->
+        <section class="post card">
+          <span class="time"> 1 min </span>
+          <div class="post-img-text">
+            <img src="../Images/face-3.jpg" alt="" width="100%" />
+            <h2>Carol Doe</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <div class="img-aside-container">
+            <aside class="img-aside">
+              <img src="../Images/nature-1.jpg" alt="" width="100%" />
+            </aside>
+            <aside class="img-aside">
+              <img src="../Images/nature-2.jpg" alt="" width="100%" />
+            </aside>
+          </div>
+          <button><i class="fa-solid fa-thumbs-up"></i> Like</button>
+          <button><i class="fa-solid fa-comment"></i> Comment</button>
+        </section>
+        <section class="post card">
+          <span class="time"> 1 min </span>
+          <div class="post-img-text">
+            <img src="../Images/face-1.jpg" alt="" width="100%" />
+            <h2>Ryan Doe</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+
+          <img src="../Images/tech-0.jpg" alt="" width="100%" />
+
+          <button><i class="fa-solid fa-thumbs-up"></i> Like</button>
+          <button><i class="fa-solid fa-comment"></i> Comment</button>
+        </section>
+      </aside>
+      <!-- right side -->
+      <aside class="right-side">
+          <section class="event card">
+             <p>Upcoming Events:</p> 
+             <img src="../Images/tech-9.jpg" alt="" width="100%">
+             <h3>Holiday</h3>
+             <p>Friday 15:00</p>
+             <button>Info</button>
+          </section>
+          <!-- friend request -->
+          <section class="request card">
+             <p>Friend Request</p> 
+             <img src="../Images/face-2.jpg" alt="" width="100%">
+             <h3>Jane Doe</h3>
+            <button class="check"><i class="fa-solid fa-check"></i></button>
+             <button class="xmark"><i class="fa-solid fa-xmark"></i></button>
+          </section>
+          <!-- ad -->
+          <section class="ad card">
+              <p>AD</p>
+          </section>
+          <!-- crawler -->
+          <section class="crawler card">
+            <i class="fa-solid fa-bug"></i>
+          </section>
+      </aside>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <p>Designed By: <em>Sandeep Kumar</em></p>
+    </footer>
+  </body>
+
+  <script src="social.js"></script>
+</html>

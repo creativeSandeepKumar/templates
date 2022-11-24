@@ -1,0 +1,360 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar {
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: space-between;
+    
+  }
+  .topnav {
+      background-color: black;
+  }
+  .navbar h2, .sidenav h2 {
+      color: #f1f1f1;
+      padding: 1rem;
+      font-weight: lighter;
+      font-size: 2rem;
+  }
+  .topnav a {
+      padding: 1rem;
+      font-size: 25px;
+      color: #f1f1f1;
+  }
+  .topnav a:hover {
+      background-color: #111;
+      color: #f1f1f1;
+  }
+
+  .sidenav {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      /* background-color: #111; */
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 25px;
+      display: none;
+      
+  }
+  .sidenav a {
+      padding: 8px 8px 8px 1rem;
+      font-size: 1.2rem;
+      color: #666;
+      display: block;
+      transition: 0.3s;
+  }
+  .sidenav h2 {
+      color: black;
+  }
+  .sidenav a:hover {
+      color: #000;
+      background-color: #ccc;
+  }
+  .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 36px;
+      margin-left: 60px;
+  }
+
+/* layout-grid */
+
+/* dropdown-jeans */
+.dropdown-jeans {
+    padding-left: 40px;
+    display: none;
+}
+.dropdown-jeans a {
+    font-size: 1rem;
+}
+.dropdown-jeans.openJeans {
+    display: block;
+}
+
+.contact {
+    padding-top: 3rem;
+
+}
+.contact a {
+    font-size: 1rem;
+    color: #000;
+}
+
+/* layout */
+.layout {
+    padding: 2rem 0 0 0;
+}
+.layout .main-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem 1rem 1rem;
+}
+.layout .main-heading h2 {
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+.layout .main-links a:not(:last-child) {
+    padding: 0 1rem;
+}
+.layout .main-links a{
+    color: black;
+    font-size: 1.2rem;
+}
+/* .layout .main-links a:hover {
+    color: #555;
+} */
+/* new-arrival */
+.new-arrival {
+    padding:  0 1rem;
+    position: relative;
+}
+.new-arrival .arrival-text {
+    position: absolute;
+    top: 30%;
+    left: 2rem;
+}
+.new-arrival .arrival-text h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    padding-bottom: 1rem;
+}
+.new-arrival .arrival-text h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    padding-bottom: 1rem;
+}
+.new-arrival .arrival-text button {
+    margin: 1rem 0 0 0;
+    padding: 1rem 2rem;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.new-arrival .arrival-text button:hover {
+    background-color: #888;
+    color: #111;
+}
+/* <!-- jeans items --> */
+.jeans-container {
+    padding: 1rem;
+}
+.jeans-section {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem 1rem;
+}
+.jeans-section img {
+    height: 50vw;
+}
+
+/* subscribe-section */
+.subscribe-section {
+    padding: 2rem 1rem;
+    background-color: #111;
+    color: white;
+}
+.subscribe-section h2 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+.subscribe-section p {
+    padding: 1rem 0;
+}
+.subscribe-section input {
+    padding: .6rem;
+    width: 100%;
+    font-size: 1rem;
+}
+.subscribe-section button {
+    margin: 1rem 0;
+    padding: .6rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: tomato;
+    border: none;
+}
+.subscribe-section button:hover {
+    background-color: #444;
+    color: #f2f2f2;
+}
+
+/* <!-- contact, about and store --> */
+.info-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    background-color: rgb(235, 233, 233);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+.info-container h3 {
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+/* contact */
+.info-container .contact p {
+    padding: .5rem 0;
+}
+.info-container .contact input {
+    padding: .4rem;
+    width: 100%;
+    margin: .5rem 0;
+    border: .2px solid #ccc;
+}
+.info-container .contact button {
+    width: 100%;
+    padding: .4rem;
+    border: none;
+    background-color: #111;
+    color: #f1f1f1;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.info-container .contact button:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* about */
+.info-container .about {
+    padding: 3rem 0 0 0;
+}
+.info-container .about a {
+    display: block;
+    color: #666;
+    padding: .5rem 0;
+}
+.info-container .about a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+/* store */
+.info-container .store {
+    padding: 3rem 0 0 0;
+}
+.info-container .store ol {
+    list-style-type: none;
+} 
+.info-container .store li {
+    padding: .5rem 0;
+    font-size: .9rem;
+}
+.info-container .store h3 {
+    padding: 1rem 0 0 0;
+}
+/* footer */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    background-color: #111;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    .new-arrival .arrival-text h2{
+        display: none;
+    }
+    .new-arrival .arrival-text {
+        top: 1rem;
+    }
+    .new-arrival .arrival-text h1{
+        font-size: 10vw;
+    }
+}
+
+  @media only screen and (max-width: 992px){
+        .sidenav.responsive {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #f2f2f2;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 25px;
+      display: block; 
+        }
+        .sidenav.responsive .closebtn {
+            display: initial;
+        }
+
+        .sidenav.closeSide {
+            display: none;
+        }
+    
+  }
+
+
+  @media only screen and (min-width: 992px) {
+    .layout-grid {
+        display: grid;
+        grid-template-columns: 250px auto;
+    }
+    
+    
+    .sidenav {
+        display: block;
+    }
+    .sidenav .closebtn {
+        display: none;
+    }
+    .topnav .bars {
+        visibility: hidden;
+    }
+    .topnav {
+        display: none;
+    }
+
+    .jeans-section {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .jeans-section img {
+        height: 250px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .layout {
+        display: grid;
+        justify-content: start;
+    }
+    .main-haeder, .new-arrival, .jeans-container {
+        width: 980px;
+    }
+  }

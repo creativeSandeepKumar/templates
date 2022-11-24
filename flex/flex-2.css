@@ -1,0 +1,20 @@
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.side-1 {
+    flex: 30%;
+    max-width: 30%;
+    background-color: black;
+    
+}
+.side-2 {
+    flex: 70%;
+    background-color: brown;
+}
+.side-2 p {
+    padding: 0 10px;
+}

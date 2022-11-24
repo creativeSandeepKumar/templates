@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 5px 3px 10px rgb(0 0 0 / 0.2);
+}
+/* background #f44336!important */
+
+ol, ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+.navbar ol {
+    background-color: #f44336;
+    padding: 1rem;
+}
+.navbar ol li {
+    display: inline;
+    padding: 0;
+}
+.navbar ol li h2 {
+    display: inline;
+    padding: 0 1rem;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+.navbar ol li a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.navbar ol li a:hover {
+    color: #222;
+}
+
+/* main layout */
+/* .main-layout {
+
+} */
+/* sidenav-container */
+.sidenav-container {
+    width: 300px;
+    /* height: 700px; */
+    background-color: #f44336;
+    display: none;
+}
+/* main-content */
+/* .main-content {
+    
+} */
+/* sidenavbar */
+.sidenavbar {
+    height: 100%;
+    position: fixed;
+    width: 300px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 5rem 2rem 2rem 2rem;
+    background-color: #f44336;
+}
+.sidenavbar h1 {
+    color: white;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+.sidenavbar a {
+    padding: 8px;
+    font-size: 1.3rem;
+    display: block;
+    transition: 0.4s;
+    color: white;
+    width: 100%;
+}
+.sidenavbar a:hover {
+    color: #222;
+}
+.sidenavbar .closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 2rem;
+    /* padding: 0; */
+}
+
+.main-content {
+    padding: 1rem 1rem 0 1rem;
+}
+.main-content h1 {
+    font-size: 4rem;
+    padding-top: 1rem;
+}
+.main-content h2 {
+    color: #f44336;
+    font-size: 2.8rem;
+    padding-top: 1rem;
+}
+.main-content .showcase-line, .services-line, .packages-line, .contact-line {
+    padding: .4rem;
+    background-color: #f44336;
+    width: 6rem;
+    border-radius: 2rem;
+    margin: 1rem 0;
+}
+.showcase {
+    display: grid;
+    gap: 10px;
+}
+
+/* services */
+.main-content .services h2, .designers h2, .packages h2, .contact h2 {
+    padding-top: 4rem;
+    font-size: 3rem;
+}
+.main-content .services p, .designers p, .packages p, .contact p {
+    padding: 1rem 0 0 0;
+    font-size: 1.3rem;
+}
+.main-content .designers h3 {
+    padding: 1rem 0;
+}
+
+.about-designers {
+    display: grid;
+    gap: 1.2rem 5px;
+   
+}
+.about-designers img {
+    height: 300px;
+    object-fit: cover;
+}
+.about-designers .designer-img {
+    background-color: #ccc;
+    
+}
+.about-designers .designer-img h3, h4, p {
+    padding: .4rem 1rem;
+    font-weight: 700;
+}
+.about-designers .designer-img p {
+    padding: .5rem 1rem;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+.about-designers .designer-img h4 {
+    color: #777;
+}
+
+
+/* packages */
+.packages .plann {
+    display: grid;
+    gap: 1rem;
+}
+
+/* plann */
+.plann {
+    padding: 1rem 0;
+    text-align: center;
+}
+.plann ol {
+    border: 1px solid rgb(221, 221, 221);
+}
+.plann ol li {
+    padding: 1rem;
+    background-color: rgb(236, 236, 236);
+    border-bottom: .8px solid rgb(204, 204, 204);
+    font-size: 1.2rem;
+}
+.plann ol li i {
+    display: block;
+    font-size: 2rem;
+    font-style: normal;
+}
+.plann .basic li:first-child  {
+    background-color: #555;
+    color: white;
+   
+}
+.plann h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.plann .pro li:first-child {
+    background-color: #f44336;
+    color: white;
+}
+.plann button {
+    padding: .8rem 1.4rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border: none;
+    background-color: white;
+}
+
+.plann .pro button {
+    background-color: #f44336;
+    color: white;
+}
+.plann button:hover {
+    background-color: #222;
+    color: white;
+}
+/* contact */
+.contact .contact-form  {
+    padding: 1rem 0;
+}
+.contact .contact-form label {
+    font-size: 1.2rem;
+}
+.contact .contact-form input {
+    width: 100%;
+    padding: .6rem;
+    margin: .2rem 0 1rem 0;
+    border: 1px solid #ccc;
+}
+
+.footer {
+    padding: 2rem;
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+}
+.footer p {
+    font-weight: lighter;
+}
+.footer p em {
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+    .showcase{
+    grid-template-columns: 50% 50%;
+}
+.showcase img {
+    height: 300px;
+}
+.about-designers {
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    text-align: center;
+}
+.packages .plann {
+    grid-template-columns: auto auto;
+}
+
+}
+
+@media only screen and (max-width: 992px) {
+    .sidenav-container.opensideNav {
+        display: block;
+    }
+    .sidenav-container.closesideNav {
+        display: none;
+    }
+    .main-content .opacity.lowOpacity {
+        opacity: .3;
+    }
+    .main-content .opacity.highOpacity {
+        opacity: 1;
+    }
+}
+
+
+/* meadia  queries for more than 992px  */
+@media only screen and (min-width: 992px) {
+    .sidenavbar .closebtn, .header {
+        display: none;
+    }
+    /* main layout */
+.main-layout {
+    display: grid;
+    grid-template-columns: 300px auto;
+}
+/* sidenav-container */
+.sidenav-container {
+    display: block;
+    background-color: #f44336;
+}
+.main-content {
+    padding: 1rem 3rem 0 3rem;
+}
+
+
+}

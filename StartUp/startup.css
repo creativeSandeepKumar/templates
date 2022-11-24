@@ -1,0 +1,419 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ol, ul {
+    list-style-type: none;
+}
+body, html {
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+}
+
+
+/* .navbar {
+    padding: 1rem;
+} */
+.navbar .logo {
+    float: left;
+}
+.navbar .icon {
+    float: right;
+    /* font-size: 1.3rem; */
+}
+.navbar a, .right-nav a {
+    padding: 1.5rem 1rem;
+    color: #444;
+}
+.navbar a:hover {
+    background-color: #ccc;
+}
+.right-nav {
+    float: right;
+    padding: 1.5rem 1rem;
+}
+
+.right-nav a i {
+    padding-right: .4rem;
+}
+.navbar::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* sidebar width full and animation */
+.sidebar {
+    height: 100%;
+    position: fixed;
+    width: 250px;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 3rem;
+    z-index: 1;
+}
+.sidebar a {
+    padding: .5rem .5rem .5rem 2rem;
+    font-size: 1.4rem;
+    color: white;
+    display: block;
+    transition: 0.5s;
+}
+.sidebar a:hover {
+  
+    color: #ccc;
+}
+.sidebar .times {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 2.3rem;
+    margin-left: 50px;
+}
+.sidebar {
+    display: none;
+}
+
+/* home section */
+.home-section {
+   background-image: url(../Images/tech-3.jpg);
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: white;
+   padding: 1rem 2rem;
+  
+}
+.home-section h1 {
+   margin: 5rem 0 0 0;
+    font-size: 5rem;
+    font-weight: lighter;
+    padding: 0 2rem 0 0;
+    line-height: 1.5;
+}
+.home-section p {
+   
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-family: serif;
+    padding: 1rem 2rem 2rem 0;
+   
+}
+.home-section button {
+    margin: 2rem 0;
+    padding: 1rem 1.2rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+}
+.home-section button:hover {
+    background-color: #ccc;
+}
+.home-section a {
+    color: white;
+    padding: 0 2px;
+    font-size: 1.4rem;
+    
+}
+.home-section a:hover {
+    color: gray;
+}
+.home-section .social-icon {
+  padding: 1rem 0;
+    filter: grayscale(50%);
+}
+
+/* about-company */
+.about-company, .team-main {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+.about-company h1, .team-main h2, .work h2 {
+    padding: 4rem 0 1rem 0;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+.about-company p, .work p {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    padding: 1rem 0;
+}
+.about-main {
+    padding: 3rem 1rem;
+}
+.about-main i {
+    font-size: 5rem;
+    padding: 2rem 0;
+    /* font-weight: lighter; */
+}
+.about-main h3 {
+    font-weight: normal;
+}
+.about-main p {
+   font-weight: normal;
+    font-size: 1.1rem;
+}
+/* know-design */
+.know-design {
+    padding: 4rem 2rem;
+    background-color: #ccc;
+}
+.know-design h2 {
+    font-size: 2rem;
+    font-weight: lighter;
+    padding: 1rem 0;
+}
+.know-design p {
+    padding: .5rem 0;
+}
+.know-design button {
+    font-size: 1.4rem;
+    padding: .6rem 1.5rem;
+    color: white;
+    background-color: #111;
+    border: none;
+    cursor: pointer;
+    margin: 1em 0;
+}
+.know-design button:hover {
+    background-color: #777;
+}
+.know-design i {
+    padding-left: 5px;
+}
+.know-design img {
+    border-radius: 5px;
+}
+ /* , .team-section */
+  .team-section {
+      padding: 4rem 2rem;
+      text-align: left;
+  }
+  .team-section h2 {
+      padding: 1rem 0;
+  }
+  .team-section .title {
+        padding: 0 0 .5rem 0;
+  }
+  .team-section p {
+      padding: .5rem 0;
+  }
+  .team-section button {
+      margin: 1rem 0;
+      width: 100%;
+      padding: .6rem;
+      font-size: 1.2rem;
+      border: none;
+      cursor: pointer;
+  }
+  .team-section button:hover {
+      background-color: #ccc;
+  }
+  .team-member {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    margin: 1rem 0;
+    
+  }
+  .team-member-text {
+      padding: 0 1rem;
+  }
+  .team-section img {
+      height: 400px;
+      object-fit: 
+      cover;
+  }
+/* achievements */
+.achievements {
+    padding: 3rem 0;
+    text-align: center;
+    background-color: rgb(90, 90, 90);
+    color: white;
+}
+.achievements li b {
+    display: block;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    font-weight: lighter;
+}
+.achievements li {
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+/* work */
+.work {
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+.work-img {
+    padding: 2rem 0 0 0;
+}
+.work-img img {
+    display: block;
+    height: 400px;
+    object-fit: cover;
+}
+.work-img img:hover {
+    opacity: 0.5;
+}
+/* skill-section */
+.skill-section {
+    padding: 4rem 2rem;
+    background-color: #ddd;
+}
+.skill h2 {
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-weight: lighter;
+}
+.skill p {
+    padding: .5rem 0;
+    line-height: 2;
+}
+.skill-name p {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    
+    padding: 1rem;
+}
+.skill-name .skill-bar {
+    width: 100%;
+    background-color: #999;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    
+}
+.skill-name .skill-photo {
+    padding: .5rem;
+    background-color: #555;
+    width: 90%;
+}
+.skill-name .skill-design {
+    padding: .5rem;
+    background-color: #555;
+    width: 85%;
+}
+.skill-name .skill-photoshop {
+    padding: .5rem;
+    background-color: #555;
+    width: 75%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 350px){
+    .home-section p {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .home-section h1 {
+        font-size: 1rem;
+        padding: 0;
+        /* display: none; */
+        margin: 0;
+    }
+    .home-section button {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .navbar .right-nav {
+        display: none;
+    }
+    .sidebar.responsive {
+        display: block;
+    }
+    .home-section h1 {
+        margin: 5rem 0 3rem 0;
+        font-size: 3rem;
+        font-weight: lighter;
+        padding: 0 2rem 0 0;
+        line-height: 1.5;
+    }
+    
+}
+
+@media only screen and (min-width: 700px) {
+    .navbar .icon {
+        display: none;
+    }
+    .about-main {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+    }
+    .know-design {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .team-section {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .achievements ol {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .achievements li b {
+        font-weight: normal;
+    }
+    .work-img {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 8px;
+        
+    }
+    .skill-section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+}
+@media only screen and (min-width: 1092px){
+    .home-section h1 {
+        padding: 3rem 0;
+    }
+    .team-section {
+        grid-template-columns: auto auto auto auto;
+    }
+    .work-img {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+       
+        
+    }
+}

@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+ol, ul {
+    list-style-type: none;
+}
+
+
+/* Task:- Breaking template in two parts after 992px for navbar aside 25% left and remaining for other main-content 75% */
+/* before 992px navbar should fixed on top with left bars and right images also break after 600px main-content of img-card in 3 flex */
+
+/* 0-992px navbar top fixed */
+/* 992px & after - navbar 30% and main content 70% */
+/* 0-600px img-card single  */
+/* 600px & more img-card in 3 flex  */
+
+:root {
+    --font: #000;
+    --skill: #9e9e9e;
+    --button: #009688;
+    --border: #ddd;
+    --border-2: #ccc;
+
+}
+
+/* navbar */
+
+.nav-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    display: none;
+}
+.nav-top .bars {
+    font-size: 2.5em;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.nav-top img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.navbar-hidden {
+    position: fixed;
+    z-index: 1;
+    width: 300px;
+    top: 0;
+    left: 0;
+    /* width: 300px; */
+    background-color: #ddd;
+    height: 100%;
+    padding: 2rem;
+    transition: .5s;
+    overflow: hidden;
+    display: none;
+}
+
+
+.navbar-hidden .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 4em;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+/*  */
+.navbar-hidden img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.navbar-hidden h1 {
+    padding: 2rem 0 .5rem 0;
+}
+.navbar-hidden p, li {
+    padding: 1rem 0;
+}
+.navbar-hidden li > i {
+    padding: 0 1rem 0 0;
+}
+.navbar-hidden div {
+    padding: 1rem 0;
+}
+.navbar-hidden div > a {
+    color: var(--font);
+    font-size: 1.4rem;
+}
+
+
+/* portfolio-main */
+.portfolio-main {
+    
+    font-weight: lighter;
+    background-color: rgb(241, 241, 241);
+}
+
+
+
+/* Image-card */
+
+
+.portfolio-main .img-card img {
+    object-fit: cover;
+    /* height: 600px; */
+    display: block;
+}
+
+/* about-me */
+.about-me {
+   
+    padding: 0 2rem;
+    
+}
+.about-me img {
+    
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.about-me  h2{
+    text-align: center;
+}
+.about-me  h2, h3, .charge-main h2 {
+    padding: 2rem 0;
+    font-weight: lighter;
+}
+.about-me p {
+    line-height: 1.6;
+    font-weight: normal;
+    padding: .5rem 0;
+    text-align: left;
+}
+div.skill {
+    width: 100%;
+    background-color: #999;
+    text-align: center;
+    color: white;
+}
+aside.photography {
+    width: 95%;
+    background-color: #444;
+    padding: 1.1rem;
+}
+aside.web-design {
+    width: 85%;
+    background-color: #444;
+    padding: 1.1rem;
+}
+aside.photoshop {
+    width: 80%;
+    background-color: #444;
+    padding: 1.1rem;
+}
+.about-me button {
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    background-color: #444;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.about-me button:hover {
+    color: black;
+    background-color: #ccc;
+}
+
+.basic {
+    text-align: center;
+    
+}
+
+
+.basic h3 {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.pro h3 {
+    background-color: var(--button);
+}
+.basic p {
+    border-bottom: 1px solid #ddd;
+    border-top: none;
+    padding: 1rem;
+}
+.basic p > span {
+    font-size: 2rem;
+    display: block;
+    padding: 0;
+}
+
+.basic button {
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+    background-color: var(--button);
+    color: white;
+    font-size: 1rem;
+}
+.basic button:hover {
+    background-color: black;
+    color: white;
+}
+
+.basic-menu, .pro, .premium {
+    opacity: .5;
+    margin: 0 0 2rem 0;
+    border: 1px solid #ddd;
+}
+.basic-menu:hover, .pro:hover, .premium:hover {
+    opacity: 1;
+}
+
+
+.charge-main {
+    padding: 0 2rem;
+}
+/* contact */
+.contact {
+    background-color: #777;
+    padding: 1rem;
+}
+.contact h2 {
+    padding: 1rem 0;
+    font-weight: lighter;
+}
+.contact aside {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    opacity: .6;
+}
+.contact .location {
+    background-color: var(--button);
+    color: white;
+}
+.contact p > i {
+    font-size: 2rem;
+    padding: 0 0 1rem 0;
+}
+/* contact-form */
+.contact-form {
+    margin: 2rem 0;
+    border-top: 1px solid white;
+    padding: 2rem 0 0 0;
+}
+.contact-form input {
+    padding: .7rem;
+    width: 100%;
+    margin: .5rem 0 1rem 0;
+    border: none;
+}
+.contact-form button {
+    font-size: 1.1em;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    color: black;
+}
+
+/* footer */
+.footer {
+    padding: 3rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.footer p {
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px)  {
+    .about-img-1 {grid-area: "about-1";}
+    .about-img-2 {grid-area: "about-1";}
+    .about-image {
+        display: grid;
+        grid-template-areas: "about-1 about-2";
+        gap: 0 10px;
+    }
+    .image-container, .basic, .contact-icon {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 0 1rem;
+    }
+    .image-container{
+        gap: 0;
+    }
+    .contact-icon {
+        gap: 0;
+    }
+    .portfolio-main .img-card img {
+        height: 400px;
+    }
+    .nav-top {
+        display: flex;
+        /* justify-content: space-between; */
+    }
+    .about-me {
+        display: grid;
+        grid-template-columns: 600px;
+        justify-content: center;
+    }
+    
+}
+@media only screen and (min-width: 992px)  {
+    .body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nav-header {
+        flex: 25%;
+    }
+    .portfolio-main {
+        flex: 75%;
+       
+    }
+    .navbar-hidden{
+        display: block;
+        width: 25%;
+    }
+    .navbar-hidden .closebtn{
+        display: none;
+    }
+    
+
+    
+    
+    
+}

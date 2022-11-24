@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: burlywood;
+}
+.header {
+    display: none;
+}
+.navbar {
+    padding: 1rem 2rem;
+    background-color: rgb(85, 81, 81);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* text-align: center; */
+}
+.navbar a {
+    text-decoration: none;
+    padding: .5em 8.5vw;
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+    z-index: 1;
+}
+.navbar a:hover {
+    background-color: #ddd;
+}
+
+/* wedding home */
+.home-main {
+    position: relative;
+    text-align: center;
+}
+.home-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    color: white;
+}
+.home-img img {
+    opacity: .8;
+}
+.home-text h1, .jane-john h1, .jane-john-img-text h1, .wedding-main h1, .rsvp-main h2 {
+    font-size: 3.5em;
+    font-weight: lighter;
+    text-align: center;
+}
+.home-text p {
+    padding: 1em 0 0 0;
+    font-size: 1.3em;
+   
+    font-weight: bold;
+}
+/* wedding home end */
+.jane-john-main, .wedding-main {
+    padding: 2% 3%;
+
+}
+.jane-john h1, .wedding-main h1 {
+    color: #444;
+    padding: 3rem 0;
+}
+.jane-john {
+    text-align: center;
+}
+.jane-john p {
+    padding: 2em 0;
+    font-style: italic;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+.jane-john button {
+    padding: 1rem 2rem;
+    font-size: 1.2em;
+    background-color: black;
+    color: white;
+    border: none;
+   cursor: pointer;
+   margin-bottom: 3rem;
+   font-weight: lighter;
+    
+}
+.jane-john button:hover {
+    background-color: #444;
+}
+.jane-john-img {
+    position: relative;
+    text-align: center;
+}
+.jane-john-img-text {
+    position: absolute;
+    top: 10%;
+    padding: 0 30%;
+    text-align: center;
+    /* left: 30%; */
+}
+.jane-john-img-text p {
+    font-size: 1.5em;
+    font-style: italic;
+    padding: 1em;
+}
+
+/* wedding-main */
+.wedding-main img {
+    border-radius: 10px;
+}
+.wedding-main {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    text-align: center;
+}
+
+.when, .where {
+    padding: 3rem 0 0 0;
+    text-align: center;
+}
+.when h2, .where h2 {
+    font-size: 2.5em;
+    font-weight: lighter;
+    padding: 0 0 1rem 0;
+    text-align: center;
+}
+.when p, .where p {
+    padding: 1em 0 0 0;
+    font-size: 1.2em;
+    font-weight: 100;
+    text-align: center;
+}
+
+/* rsvp-main */
+.rsvp-main {
+    background-color: lightcoral;
+    text-align: center;
+    padding-bottom: 2rem;
+    margin: 5rem 0 0 0;
+}
+.rsvp-main h2 {
+    font-size: 2em;
+    letter-spacing: 3px;
+    padding: 2em 0 0 0;
+}
+.rsvp-main p {
+    font-size: 1.2em;
+    letter-spacing: 3px;
+    padding: 1em 0;
+}
+.rsvp-main button {
+    font-size: 1.2em;
+   padding: 1em 2em;
+   background-color: tomato;
+   color: white;
+   border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.rsvp-main button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.footer {
+    padding: 5rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+    .navbar a{
+        padding: .5em 5vw;
+    }
+    .header {
+        display: block;
+    }
+    .jane-john-img-text {
+        position: absolute;
+        top: 40%;
+        padding: 0 30%;
+        text-align: center;
+        /* left: 30%; */
+    }
+    /* asides */
+    .when {
+        flex: 50%;
+    }
+    .where {
+        flex: 50%;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .navbar a{
+        padding: .5em 7.5vw;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .jane-john-main {
+        width: 80%;
+        margin: 0 10%;
+    
+    }
+    .wedding-main img {
+        width: 80%;
+        margin: 0 10%;
+    }
+}

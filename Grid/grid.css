@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.item-1 {
+    padding: 3rem;
+    background-color: blue;
+    grid-area: text-para;
+}
+.item-2 {
+    padding: 3rem;
+    background-color: brown;
+    
+    grid-area: img;
+}
+.item-3 {
+    padding: 3rem;
+    background-color: khaki;
+    grid-area: main-content;
+}
+.main {
+    display: grid;
+   grid-template-areas: 'img text-para' 'img main-content';
+}

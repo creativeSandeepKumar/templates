@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+a {
+    text-decoration: none;
+}
+ol, li {
+    list-style-type: none;
+}
+
+.sidenav {
+    
+    /* background-color: gray; */
+   /* height: 1000px; */
+   text-align: center;
+   font-family: sans-serif;
+  
+}
+.navbar ol {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    margin: .7rem 0 0 0;
+    /* opacity: .6; */
+    
+    
+}
+
+.navbar img {
+    object-fit: cover;
+    /* position: 200%; */
+    display: none;
+}
+
+.navbar a{
+    padding: 1rem;
+    width: 100%;
+    color: white;
+    
+}
+.navbar a i {
+    font-size: 2rem;
+    background-color: transparent;
+    padding: 1rem 0;
+    display: none;
+}
+
+.navbar a:hover {
+    background-color: hotpink;
+}
+.content-main {
+   margin: 0 0 4rem 0;
+    color: white;
+    /* background-color: red; */
+    text-align: center;
+    font-weight: lighter;
+    font-family: sans-serif;
+    padding: 1rem;
+}
+.content-main h1 {
+    padding: 2rem 0 1rem 0;
+    font-size: 4.5rem;
+    /* font-weight: lighter; */
+    font-weight: 50;
+}
+.content-main p {
+    padding: 0 0 1rem 0;
+}
+.content-main img {
+    object-fit: cover;
+    filter: brightness(120%);
+    height: 700px;
+}
+.content-main h2, .reputation-main h2 {
+    text-align: left;
+    padding: 2rem 0 1rem 0;
+    font-weight: lighter;
+}
+.content-main span {
+    display: block;
+    border: 1px solid #ddd;
+    width: 200px;
+    margin-bottom: 1rem;
+}
+.name-para {
+    text-align: left;
+    padding: 2rem;
+    color: #999;
+}
+.skills p {
+    text-align: left;
+    padding: 2rem 0 1rem 0;
+    letter-spacing: 5px;
+}
+.skill {
+    background-color: #6666;
+    
+}
+.photography, .Web-design, .photoshop {
+    background-color: #ccc;
+    padding: 1rem;
+}
+.photography{width: 90%;}
+.Web-design{width: 95%;}
+.photoshop{width: 85%;}
+
+/* work-exp */
+.work-exp ol {
+    margin: 2rem 0;
+    /* padding: 2rem 0; */
+    background-color: #ccc;
+}
+.work-exp li, i {
+    background-color: #ccc;
+    color: black;
+    padding: 1rem 0;
+    text-align: center;
+}
+.work-exp i {
+    display: block;
+    font-size: 2rem;
+    
+}
+.about {
+    text-align: left;
+}
+.about button {
+    color: black;
+    text-align: left;
+    padding: 1rem 2rem ;
+    background-color: #ccc;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+}
+.about button:hover {
+    background-color: grey;
+    color: #ccc;
+}
+/* price */
+.price {
+    text-align: center;
+}
+.price-lst {
+    margin: 1rem 0;
+}
+.price li {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    
+}
+.price li i {
+    display: block;
+    background-color: #f1f1f1;
+    color: black;
+    padding: 1rem 0 ;
+    width: 100%;
+}
+.price li h2 {
+    background-color: #666;
+    text-align: center;
+}
+.price li i  button {
+    color: white;
+    padding: 1rem 1.5rem;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.price li i  button:hover {
+    background-color: gray;
+    
+}
+.price .basic, .pro {
+    margin: 1rem 0;
+    opacity: .6;
+}
+.price .basic:hover, .pro:hover {
+    opacity: 1;
+} 
+.rep-1, .rep-2 {
+    display: grid;
+    grid-template-columns: 140px auto;
+}
+.reputation-main img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 1rem 0;
+}
+.reputation-main .rep-para {
+    padding: 2.4rem 0 0 1rem;
+    text-align: left;
+    
+}
+.photo {
+    display: grid;
+    /* gap: 1rem 0; */
+}
+.photo img {
+    margin: .2rem 0;
+}
+/* contact */
+.contact ol li {
+    /* background-color: green; */
+    text-align: left;
+    padding: 1rem 0;
+}
+.contact-form {
+    text-align: left;
+    padding: 3rem 0 2rem 0;
+}
+.contact-form input {
+    font-size: 1.2rem;
+    width: 100%;
+    padding: .7rem;
+    margin: .5rem 0;
+    background-color: #ccc;
+    color: black;
+    border: none;
+}
+.contact-form button {
+    background-color: #ccc;
+    color: black;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #555;
+}
+.footer {
+    font-size: 1.3rem;
+}
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: 100px auto;
+    }
+    /* .navbar ol {
+        display: grid;
+        grid-template-columns: none;
+       grid-template-rows: 150px 70px 70px 70px 70px; 
+       background-color: green;
+       margin: 0;
+        text-align: center;
+        
+    } */
+    .navbar ol {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+    .navbar li {
+        width: 100%;
+    }
+    .navbar a {
+     
+        background-color: #444;
+        display: block;
+        margin: 0;
+    }
+    
+    .navbar img {
+        display: block;
+    }
+    .navbar a i{
+    display: block;
+}
+.work-exp ol {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 0;
+}
+.price-list {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: auto auto;
+}
+.photo {
+    grid-template-columns: auto auto;
+    gap: 0 1em;
+}
+.photo img {
+    object-fit: cover;
+    height: 400px;
+}
+
+
+
+}
+@media only screen and (min-width: 1092px) {
+    .content-main {
+        display: grid;
+        grid-template-columns: 990px;
+        justify-content: center;
+    }
+}

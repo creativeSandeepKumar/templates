@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body, html {
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+}
+
+.container {
+   position: relative;
+    height: 100%;
+    background-image: url(../Images/shop-2.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+ 
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(75%);
+}
+.top-left {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: white;
+}
+.top-left p {
+    font-size: 2rem;
+    background-color: #000;
+    margin: 1rem;
+    padding: .5rem;
+    text-align: center;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+.center h2 {
+    padding: .5rem;
+    /* background-color: #000; */
+    font-size: 4rem;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 3rem;
+    left: 1rem;
+    color: white;
+}
+.bottom-left h3 {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+}
+.bottom-left p {
+    font-size: 1.3rem;
+}
+.footer {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: white;
+}
